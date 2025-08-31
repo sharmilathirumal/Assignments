@@ -1,0 +1,36 @@
+Differences with Iterator:
+---------------------------
+Iterator can only move forward, while ListIterator can move both directions (forward & backward).
+Iterator works with all Collection types, but ListIterator only works with List implementations.
+Iterator supports remove() only, while ListIterator supports remove(), add(), and set().
+
+Index-based methods in ListIterator:
+-------------------------------------
+nextIndex() → returns index of the next element.
+previousIndex() → returns index of the previous element.
+👉 These are useful for debugging or when you want to know where you are in the list.
+
+set() method restrictions:
+----------------------------
+Can only be called after a successful next() or previous().
+If you call set() immediately after add(), it will throw IllegalStateException.
+
+add() behavior:
+----------------
+Inserts the element immediately before next() element and after previous() element.
+After adding, the cursor is positioned between the new element and the next element, so you cannot call set() or remove() immediately after add().
+
+Fail-Fast Behavior:
+--------------------
+Like most iterators in Java, ListIterator is fail-fast.
+If the list is structurally modified (add/remove directly on the list object, not via the iterator), it throws ConcurrentModificationException.
+
+When you need bidirectional traversal.
+---------------------------------------
+When you need to insert/update/delete while iterating safely.
+Example: implementing text editors, undo/redo navigation, playlist navigation.
+
+Time Complexity Note:
+--------------------
+For ArrayList, operations via ListIterator (like add(), remove()) can be O(n) in the worst case (because elements may need shifting).
+For LinkedList, these operations are O(1).

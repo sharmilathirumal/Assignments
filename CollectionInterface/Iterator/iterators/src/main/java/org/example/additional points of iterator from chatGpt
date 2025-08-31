@@ -1,0 +1,32 @@
+Applicable Collections
+----------------------
+Unlike ListIterator, Iterator can be used on any Collection (List, Set, Queue, Deque, Map’s keySet/values/entrySet).
+Example: HashSet, TreeSet, PriorityQueue, ArrayDeque, HashMap.entrySet().
+
+Methods in Iterator
+-------------------
+hasNext() → checks if more elements are available.
+next() → returns next element, throws NoSuchElementException if none.
+remove() → removes last element returned by next().
+
+Limitations of Iterator
+-----------------------
+Forward-only traversal (can’t go backward).
+Doesn’t provide index info (you don’t know the position of elements).
+No add() or set() (only supports deletion).
+One-time use → cannot be reset, need to recreate.
+
+Fail-Fast Iterators
+-------------------
+Already covered in your notes 👍, but highlight:
+Fail-fast iterators (like in ArrayList, HashMap) throw ConcurrentModificationException on structural modification.
+Fail-safe iterators (like in ConcurrentHashMap, CopyOnWriteArrayList) do not throw → instead they operate on a snapshot copy.
+
+Exceptions in Iterator
+-----------------------
+NoSuchElementException → when calling next() after the end.
+IllegalStateException → when calling remove() without first calling next().
+When to Use Iterator vs Alternatives
+Use Iterator → when you want a generic way to traverse any collection.
+Use ListIterator → when working with Lists and need bidirectional traversal or CRUD operations.
+Use for-each loop / streams → when you only need read-only traversal

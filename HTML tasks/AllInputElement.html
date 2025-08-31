@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Form With All Input Types</h1>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <label for="TextInput">Text Input:</label>
+            <input type="text" id="TextInput" name="TextInput" value="Sample text"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" value="shinchan"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="example@example.com"><br><br>
+            <label for="phone">Telephone:</label>
+            <input type="tel" id="phone" name="phone" value="123-456-7890"><br><br>
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" value="https://www.example.com"><br><br>
+            <label for="number">Number:</label>
+            <input type="number" id="url" name="url" value="42"><br><br>
+            <label for="range">Range:</label>
+            <input type="range" id="range" min="0" max="100" value="90"><br><br>
+            <label for="Date">Date:</label>
+            <input type="date" id="date" name="date" value="2024-07-17"><br><br>
+            <label for="time">Time:</label>
+            <input type="time" id="time" value="22:00"><br><br>
+            <label for="datetime-local">Datetime-local:</label>
+            <input type="datetime-local" id="datetime-local" name="datetime-local" value="2024-07-17 22:02"><br><br>
+            <label for="month">Month:</label>
+            <input type="month" id="month" name="month" value="2024-07"><br><br>
+            <label for="week">Week:</label>
+            <input type="week" id="week" name="week" value="2024-W01"><br><br>
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color" value="#ff0001"><br><br>
+            <label for="checkbox">Checkbox:</label>
+            <input type="checkbox" id="checkbox" name="checkbox" checked><br><br>
+            <label>Radio Buttons:</label><br>
+            <input type="radio" id="optio1" name="option1" checked>
+            <label for="optio1">Option 1</label><br>
+            <input type="radio" id="option2" name="option1">
+            <label for="option2">Option 2</label><br><br>
+            <label for="file">File Input:</label>
+            <input type="file" id="file" name="file"><br><br>
+            <label for="textarea">Textarea:</label><br>
+            <textarea id="textarea" name="textarea" rows="4"  cols="50">Default text</textarea><br><br>
+            <label for="Dropdown">Select Dropdown:</label>
+            <select id="Dropdown" name="Dropdown">
+                <option>Option1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select><br><br>
+            <label for="datalist">DataList:</label>
+            <input type="text" id="datalist-input" name="datalist-input" list="datalist-options">
+            <datalist id="datalist-options">
+               <option value="Option1">
+               <option value="Option2">
+               <option value="Option3">
+               </datalist><br><br>
+            <label for="submit">Submit Button:</label>
+            <input type="submit" id="submit" name="submit"><br><br>
+            <label for="reset">Reset Button:</label>
+            <input type="reset" id="reset" name="reset"><br><br>
+            <label for="button">Button:</label>
+            <input type="button" id="button" value="Click here" onclick="alert('Button Cliked !')"<br><br>
+        </form>
+    </body>
+</html>

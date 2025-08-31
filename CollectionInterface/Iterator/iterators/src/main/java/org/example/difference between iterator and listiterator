@@ -1,0 +1,23 @@
+Feature 	                            Iterator	                            ListIterator
+Package   	                            java.util	                            java.util
+Inheritance	                            Interface(root cursor)	                Extends Iterator
+Introduced in	                        Java 1.2	                            Java 1.2
+Collections Supported	                Works with all collections (List,    	Works with only List implementations (ArrayList, LinkedList, Vector, Stack)
+                                        Set, Queue, Map views like entrySet())
+Traversal                               Direction	Forward only	            Forward and Backward
+Methods Available	                    hasNext(), next(), remove()         	All Iterator methods + hasPrevious(), previous(), nextIndex(), previousIndex(), add(), set()
+CRUD Operations	                        Only Delete (via remove())	            Update (set()), Delete (remove())
+                                        Create (add()), Read (next()
+                                        /previous())
+Index Information	                    ❌ Not available	                    ✅ Available (nextIndex(), previousIndex())
+Reset/Reusability	                    One-time use → need new iterator	    One-time use → need new ListIterator
+Use Cases	                            General iteration across all        	Advanced iteration in lists: bidirectional traversal, modifications while iterating
+                                        collections
+Fail-Fast Behavior	                    Yes (throws 	                        Yes (same fail-fast behavior)
+                                        ConcurrentModificationException if
+                                        collection is modified outside iterator)
+Exceptions	                            NoSuchElementException,             	NoSuchElementException, IllegalStateException
+                                        IllegalStateException
+Performance Note	                    Works for all collections; 	            For Lists:• ArrayList: add/remove may be O(n) (shifting)
+                                        removal cost depends on collection type    • LinkedList: add/remove is O(1)
+
