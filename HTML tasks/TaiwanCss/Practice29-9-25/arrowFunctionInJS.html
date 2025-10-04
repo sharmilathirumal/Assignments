@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow funciton</title>
+</head>
+<body>
+    <h1>Arrow funciton</h1>
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo"></p>  
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+
+</body>
+<!--An arrow function is shorter syntax for writing function in javascript.introduces in ES6, arrow funciton allows more consise and 
+readable code. Arrow functions use => for a compact syntax -->
+<script>
+    function myFunction(){
+    //normal way to create a function
+    function addFunction(a,b){
+        return a+b;
+    }
+    document.getElementById("demo").innerHTML =addFunction(5,6);
+    //arrow Function
+    const add = (a,b)=>a+b;
+    document.getElementById("demo1").innerHTML = add(5,10);
+    //arrow Function without parameter
+    const add1 =() =>{console.log("Hi Welcome")};
+    document.getElementById("demo2").innerHTML =add1();
+    //arrow Function with single parameter
+    const add2 = (a) => a*a;
+    document.getElementById("demo3").innerHTML = add2(5);
+    //arrow Function with multiple parameter
+    const add3 =(a,b,c) =>a*b*c
+    document.getElementById("demo4").innerHTML = add3(1,2,3);
+    //arrow Function with default parameter
+    const add4 =(a,b,c=100) =>a+b+c
+    document.getElementById("demo5").innerHTML = add4(1,2);
+    //return object literals
+    const add5 = (firstName, lastName) =>
+    ({first: firstName, last: lastName});
+    //console.log(makePerson("Pankaj", "Bind"));
+    document.getElementById("demo6").innerHTML =add5("sharmila","thirumal");
+    //async arrow function
+    const fetchData = async () => {
+    const data = await fetch('https://api.example.com/data');
+    return data.json();
+};
+    document.getElementById("demo7").innerHTML =fetchData;
+}
+</script>
+</html>

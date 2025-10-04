@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8ba53c20-d34c-4284-af2d-51eed0520385" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/SOLID Principle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/dependencyInversion/bad/AddOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/dependencyInversion/bad/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/dependencyInversion/bad/SubOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/dependencyInversion/good/AddOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/dependencyInversion/good/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/dependencyInversion/good/CalculatorOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/dependencyInversion/good/SubOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/liskov/bad/CreditCardLoan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/liskov/bad/HomeLoan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/liskov/bad/LoanClosureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/liskov/bad/LoanPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/liskov/bad/MainProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/liskov/good/CreditCardLoan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/liskov/good/HomeLoan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/liskov/good/LoanClosureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/liskov/good/LoanPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/liskov/good/MainProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/DesignPattern/src/main/java/org/solidPrinciple/liskov/good/SecureLoan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet/HTTPServlet/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet/HTTPServlet/src/main/webapp/WEB-INF/ web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CollectionInterface/Iterator/iterators/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CollectionInterface/Iterator/iterators/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="33azbFQLMf7ZhoXp1unP70Rq3SM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/sharm/OneDrive/Desktop/Java Tasks/SQLTasks"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ba53c20-d34c-4284-af2d-51eed0520385" name="Changes" comment="" />
+      <created>1759570041142</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759570041142</updated>
+    </task>
+    <servers />
+  </component>
+</project>

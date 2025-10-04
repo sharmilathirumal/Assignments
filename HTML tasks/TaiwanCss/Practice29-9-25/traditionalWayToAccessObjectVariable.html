@@ -1,0 +1,35 @@
+<!--in javascript before object destructoring was introduced(ES6),we used dot notion
+or bracket notion to access the object properties -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Object properties</title>
+</head>
+<body>
+    <h1>Accessing Object properties</h1>
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo"></p>  
+    <p id="demo1"></p>
+    <script>
+        function myFunction(){
+            const person = {firstName:"John", lastName:"Doe", age:25};
+            //traditional way to access objects-dot notion
+            document.getElementById("demo").innerHTML =person.firstName + " " + 
+                                                       person.lastName + " is " +
+                                                       person.age + " years old.";
+            //bracket notion
+            document.getElementById("demo1").innerHTML =person["firstName"] + " " + 
+                                                       person["lastName"] + " is " +
+                                                       person["age"] + " years old.";                                       
+        }
+       /*
+       But if the object has nested objects and we need to access the nested one the it
+       will keep repeating like Person.Address.State, this make code longer and less clean
+       for this the object destructuring concept introduced to make code less and clean
+       */     
+    </script> 
+</body>
+</html>

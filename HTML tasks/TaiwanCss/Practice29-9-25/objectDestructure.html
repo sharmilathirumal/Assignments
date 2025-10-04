@@ -1,0 +1,52 @@
+<!-- first check the traditional way in this same practice29-9-25 folder
+Object Destructuring is a syntax feature that allows us to extract the values from objeect
+and assign them to variables in a more concise and readable way.it simplifies extracting
+properties from objects and can be used to access deeply nested values easily.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Destructuring</title>
+</head>
+<body>
+    <h1>Object Destructuring</h1>
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo"></p>  
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        function myFunction(){
+            const person = {firstName:"John", lastName:"Doe", age:25};
+            //Destructuring assignment
+            const {firstName, lastName, age} = person;
+            document.getElementById("demo").innerHTML = firstName + " " + lastName + " is " + age + " years old.";
+            //assign with customised variables
+            const {firstName:userFirstName,lastName:userLastName} = person
+            document.getElementById("demo1").innerHTML = userFirstName+" "+userLastName+" "+"is "+" "+age+" "+"years old.";
+            //providing default values if property doesn't exist,you can set default value
+            const {firstName:fn,lastName:ln,age:a,country="India"} =person
+            document.getElementById("demo2").innerHTML = fn + " " + ln + " is " + a + " years old and "+"he living in "+country;
+            const{country:c} = person
+            document.getElementById("demo3").innerHTML = c;/*this return undefined Because default values only work inside the destructuring statement itself.
+            we cannont access the country here*/
+            //accessign nested objects
+            const person1 ={
+                name:"Joseph",
+                age:26,
+                address:{
+                    street:"church street",city:"chennai"
+                }
+            }
+            const{name:n,age:age1,address:{street,city}} = person1
+            document.getElementById("demo4").innerHTML = n+" "+age1 +" "+street+" "+city;
+            
+        }
+            
+    </script> 
+</body>
+</html>

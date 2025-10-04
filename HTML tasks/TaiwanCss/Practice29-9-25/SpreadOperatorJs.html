@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread parameter</title>
+</head>
+<body>
+    <h1>Spread parameter</h1>
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo"></p>  
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+
+</body>
+<!--
+the spread operator(represented as three dots) is used on iterables like array and string or properties or objects, to expand 
+wherever 0 or more elements required to be copied or assigned
+-->
+<script>
+function myFunction(){
+    let a=[10,20];
+    let b=[...a,30,40];
+    document.getElementById("demo").innerHTML = b;
+    //find min max using spread operator, without spread operator we can't find Math min value for array it trow NAN
+    document.getElementById("demo1").innerHTML =Math.min(b);//it will return NAN
+    document.getElementById("demo2").innerHTML=Math.min(...b);//here the spread operator “expands” an iterable object arr into the list of arguments In order to avoid this NaN output
+    //Passing Array Elements as Function Parameters
+    function add(a,b,c,d){
+        return a+b+c+d;
+    }
+    document.getElementById("demo3").innerHTML = add(...b);
+    //Concatenate Arrays using Spread Operator
+    let c =[...a,...b];
+    document.getElementById("demo4").innerHTML =c; /*this apporach is not recomended when it comes to large data because the native concat()
+    method is spead compare to this approach
+    */
+   //Working of Objects with Spread Operator
+   const usr = {
+    name: 'Jen',
+    age: 22
+    };
+    const cloneUsr = { ...usr };
+    document.getElementById("demo4").innerHTML = cloneUsr.name+" " +cloneUsr.age;
+}
+</script>
+</html>

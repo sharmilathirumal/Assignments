@@ -1,0 +1,44 @@
+SOLID:
+S- Single Responsiblity
+------------
+ one class should have only one responsibility
+  ex: Account class should maintain the Account operation it should not care about withdraw or deposit those will be
+  handled by Transaction class
+
+O -Open Closed:
+---------------
+any class/interface should be closed for modification , if there is any modifications needs to be done in class/interface
+then the class/interface should be extended by new class and we can add the modification with that new class.
+
+L -Liskov Substitution:
+-----------------------
+Objects of a superclass should be replaceable with objects of its subclasses without affecting the correctness of the program
+
+Meaning in Simple Terms:
+If class B is a subclass of class A, then anywhere you use an object of A, you should be able to use an object of B without breaking the program’s behavior.
+
+I-Interface Segregation:
+------------------------
+Clients should not be forced to depend on interfaces they do not use.
+Meaning in Simple Terms
+--------------------------
+Don’t create large, “fat” interfaces with too many methods.
+Instead, split them into smaller, more specific interfaces so that classes only implement what they actually need.
+This avoids having “dummy” implementations (methods that do nothing or throw exceptions).
+👉 A class shouldn’t be forced to implement methods that don’t make sense for it.
+
+ex: let's say we are implementing a program for documents(add, delete) here the Document interface should only
+have methods to create and delete the document , it should not worry about connecting DB or anything we can
+have different interface for different methods
+
+D-Dependency Inversion:
+-----------------------
+High-level modules should not depend on low-level modules. Both should depend on abstractions.
+Abstractions should not depend on details. Details should depend on abstractions.
+
+Meaning in Simple Terms
+-----------------------
+High-level modules = classes that contain business rules (e.g., PaymentProcessor).
+Low-level modules = classes that handle details (e.g., CreditCardPayment, PaypalPayment).
+Instead of high-level depending directly on low-level, both should depend on an interface/abstraction.
+👉 This way, if details change (like payment method, database, API), the high-level logic doesn’t break.
